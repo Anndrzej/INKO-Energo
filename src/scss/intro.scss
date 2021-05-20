@@ -1,0 +1,90 @@
+
+.intro-img-wrapper {
+    width: 100vw;
+    height: 100vh;
+
+    background: url(../img/intro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.intro-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 20, 27);
+    opacity: 0.8;
+}
+
+.border-wrapper {
+    position: relative;
+    // background: rgba(30, 33, 40, 0.5);
+}
+.border-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: rgba(30, 33, 40);
+}
+.border-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    background: rgba(30, 33, 40);
+}
+.border-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100vh;
+    background: rgba(30, 33, 40);
+}
+.border-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: rgba(30, 33, 40);
+}
+
+.border-head {
+    padding: 0 100px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.border-logo {
+    color: $white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    margin: 0 0 0 10%;
+    p {
+        font-size: 40px;
+        margin-right: 10px;
+    }
+    span {
+        background: $red;
+        font-size: 30px;
+        padding: 10px;
+    }
+}
+
+.border-communication {
+    a {
+        margin-right: 30px;
+        color: $white;
+        text-decoration: none;
+        font-size: 22px;
+    }
+}
