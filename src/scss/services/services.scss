@@ -8,6 +8,12 @@
   flex-wrap: wrap;
 }
 
+.services__container {
+@extend .achivements__container;
+}
+
+
+
 .services__block {
   display: flex;
   height: 50%;
@@ -26,7 +32,6 @@
   &:hover {
     background: rgba(0, 0, 0, 0);
   }
-
 }
 
 .services__text {
