@@ -22,13 +22,17 @@
   height: 33.3333%;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: 2.5rem;
+
+  border: 1px groove $gray;
 
   img {
     width: 3rem;
     height: 3rem;
     margin-bottom: 5rem;
   }
+
+
 }
 
 .achivements__info {
@@ -44,5 +48,20 @@
     margin-top: 1rem;
     font-size: 1rem;
     line-height: 2rem;
+  }
+
+  &-stat {
+    display: flex;
+    align-items: center;
+
+    span {
+      color: $red;
+      font-size: 4rem;
+    }
+
+    p {
+      margin-left: 2rem;
+      font-size: 2rem;
+    }
   }
 }
