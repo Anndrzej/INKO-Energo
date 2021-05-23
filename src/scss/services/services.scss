@@ -1,0 +1,53 @@
+.services {
+  height: 100vh;
+}
+
+.services__inner {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services__block {
+  display: flex;
+  height: 50%;
+  width: 33.33333%;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  transition: .5s linear;
+
+  img {
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  &:hover {
+    background: rgba(0, 0, 0, 0);
+  }
+
+}
+
+.services__text {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: $white;
+  font-size: 2.5rem;
+
+  span {
+    display: block;
+
+    &:after {
+      content: '';
+      background: url(../../img/arrow-right.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 20%;
+      width: 30px;
+      height: 12px;
+    }
+  }
+}
