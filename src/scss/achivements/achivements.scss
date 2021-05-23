@@ -1,0 +1,67 @@
+.achivements {
+  height: 100vh;
+}
+
+.achivements__inner {
+  @extend .services__inner
+}
+
+.achivements__container {
+  width: calc(100% - 200px);
+  height: calc(100% - 200px);
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.achivements__block {
+  @extend .services__block;
+  background: unset;
+  position: unset;
+  cursor: unset;
+  height: 33.3333%;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+
+  border: 1px groove $gray;
+
+  img {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 5rem;
+  }
+
+
+}
+
+.achivements__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+
+  h5 {
+    font-size: 2rem;
+  }
+
+  p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  &-stat {
+    display: flex;
+    align-items: center;
+
+    span {
+      color: $red;
+      font-size: 4rem;
+    }
+
+    p {
+      margin-left: 2rem;
+      font-size: 2rem;
+    }
+  }
+}
