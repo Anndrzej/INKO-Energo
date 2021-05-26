@@ -1,6 +1,10 @@
 .section {
     height: 100vh;
     position: relative;
+
+    &--answers.hidden {
+        visibility: hidden;
+    }
 }
 .section__inner {
     height: 100%;
