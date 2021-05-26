@@ -20,6 +20,8 @@
     }
 }
 .work__item {
+    width: 100%;
+    height: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -27,5 +29,25 @@
 
     img {
         margin-bottom: 20px;
+    }
+}
+.work__description {
+    display: none;
+}
+.work__item.active {
+    border: 1px solid $border-color;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 12px 44px;
+
+    img {
+        display: none;
+    }
+    p {
+        display: none;
+    }
+    .work__description {
+        display: block;
+        font-size: 18px;
+        line-height: 30px;
     }
 }
