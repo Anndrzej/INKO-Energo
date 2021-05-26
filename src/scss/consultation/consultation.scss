@@ -1,0 +1,25 @@
+.consultation {
+    overflow: hidden;
+}
+.consultation__img {
+    width: 100vw;
+    height: 100vh;
+    background: url(../../img/consultation-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.consultation__shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 20, 27, 0.8);
+}
+
+.consultation__title {
+    color: $white;
+    font-size: 64px;
+    line-height: 75px;
+
+    margin-bottom: 45px;
+}

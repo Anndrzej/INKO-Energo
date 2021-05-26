@@ -1,0 +1,31 @@
+.section {
+    height: 100vh;
+    position: relative;
+}
+.section__inner {
+    height: 100%;
+    padding: 100px 0 135px 0;
+
+    text-align: center;
+
+    &--partners {
+        padding: 120px 0 0 0;
+    }
+}
+
+.section__title {
+    h2 {
+        font-size: 48px;
+        line-height: 75px;
+
+        margin-bottom: 5px;
+    }
+}
+.section__text {
+    p {
+        font-size: 24px;
+        line-height: 30px;
+
+        margin-bottom: 15px;
+    }
+}

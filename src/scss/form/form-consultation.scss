@@ -1,0 +1,56 @@
+.form__text {
+    font-size: 24px;
+    line-height: 30px;
+    color: $white;
+
+    margin-bottom: 50px;
+}
+
+.form__description {
+    font-size: 18px;
+    line-height: 30px;
+    color: $white;
+
+    margin-bottom: 30px;
+
+    button {
+        color: $red;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+.form__input__container {
+    margin-bottom: 40px;
+}
+.input__consultation {
+    width: 380px;
+    background: rgba(18, 20, 27, 0.8);
+    border: 1px solid #333640;
+    border-radius: 4px;
+
+    color: $white;
+    font-size: 18px;
+
+    padding: 15px 15px;
+
+    &:nth-child(1) {
+        margin-right: 30px;
+    }
+}
+.textarea__consultation {
+    width: 1300px;
+    height: 160px;
+    padding: 15px 15px;
+    resize: none;
+
+    color: $white;
+    font-size: 18px;
+
+    background: rgba(18, 20, 27, 0.8);
+    border: 1px solid #333640;
+    border-radius: 4px;
+
+    margin-bottom: 20px;
+}
