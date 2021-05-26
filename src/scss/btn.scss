@@ -2,7 +2,7 @@
   border: none;
   color: $white;
   background: $red;
-  padding: 1.3rem 2rem;
+  padding: 15px 20px;
   font-size: 15px;
   border-radius: 5px;
 
@@ -11,5 +11,12 @@
 
   &:hover {
     background: rgb(107, 9, 13);
+  }
+
+  &--big {
+    font-size: 24px;
+    line-height: 34px;
+    text-decoration: none;
+    padding: 20px 100px;
   }
 }
