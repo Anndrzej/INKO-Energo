@@ -1,6 +1,10 @@
 .calculator {
   height: 100vh;
 }
+.calculator.hidden {
+  visibility: hidden;
+  position: relative;
+}
 
 .calculator__inner {
   height: 100%;

@@ -7,11 +7,15 @@
 @import "./theme-switcher.scss";
 @import "./section.scss";
 @import "./answers.scss";
+@import "./answers-modal.scss";
 @import "./location.scss";
+
+@import "./modal.scss";
 
 @import "./services/services.scss";
 @import "./achivements/achivements.scss";
 @import "./calculator/calculator.scss";
+@import "./calculator/calculator-modal.scss";
 @import "./info/info.scss";
 @import "./work/work.scss";
 @import "./partners/partners.scss";
@@ -19,5 +23,6 @@
 
 // form
 @import "./form/form-consultation.scss";
+@import "./form/form-calculator.scss";
 
 
