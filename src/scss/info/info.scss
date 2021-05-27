@@ -1,3 +1,22 @@
+.info {
+  height: 100vh;
+}
+
+.info__inner {
+  @extend .services__inner;
+}
+
+.info__block {
+  @extend .services__block;
+
+  &:hover {
+    .info__title {
+      color: $red
+    }
+  }
+}
+
+
 .info__wrp {
   position: absolute;
   bottom: 20%;
@@ -11,11 +30,16 @@
 
   margin-bottom: 10px;
   transition: color .2s linear;
+
+
 }
 
 .info__text {
   font-size: 16px;
   line-height: 22px;
+
+
+
 }
 
 .info__btn {
