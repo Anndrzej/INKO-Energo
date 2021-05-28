@@ -1,51 +1,56 @@
 .modal {
-    width: 100vw;
-    height: 100vh;
-    z-index: 999;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
 
-    position: absolute;
+  position: absolute;
 
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .modal.show {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal__inner {
-    padding: 75px;
-    position: relative;
+  padding: 75px;
+  position: relative;
 }
+
 .modal__title {
-    font-size: 64px;
-    line-height: 75px;
+  font-size: 64px;
+  line-height: 75px;
 
-    margin-bottom: 45px;
+  margin-bottom: 45px;
 }
-.modal__description {
-    width: 100%;
-    max-width: 790px;
-    font-size: 24px;
-    line-height: 30px;
 
-    margin-bottom: 50px;
+.modal__description {
+  width: 100%;
+  font-size: 24px;
+  line-height: 30px;
+
+  margin-bottom: 50px;
+
+  span {
+    display: block;
+  }
 }
 
 .close {
-    position: absolute;
-    top: 115px;
-    right: 115px;
+  position: absolute;
+  top: 115px;
+  right: 115px;
 
-    svg {
-        fill: $red;
-        width: 32px;
-        height: 32px;
-    }
+  svg {
+    fill: $red;
+    width: 32px;
+    height: 32px;
+  }
 }

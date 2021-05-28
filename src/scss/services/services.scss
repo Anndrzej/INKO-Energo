@@ -31,11 +31,7 @@
 
   &:hover {
     background: rgba(0, 0, 0, 0);
-    transition: color .2s linear;
 
-    .info__title {
-      color: $red;
-    }
   }
 
   &:nth-of-type(1) {

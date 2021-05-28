@@ -1,8 +1,20 @@
+// fonts
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+  font-family: "UniNeueLight";
+  // адрес шрифта и тип 
+  src: url("../fonts/UniNeueLight.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
 @import "./variables.scss";
 @import "./reset.scss";
-@import "./intro.scss";
-@import "./btn.scss";
-@import "./burger.scss";
+@import "./intro/intro.scss";
+@import "./helpers/btn.scss";
+@import "./intro/burger/burger.scss";
+@import "./intro/burger/menu.scss";
 @import "./scroll.scss";
 @import "./theme-switcher.scss";
 @import "./section.scss";
@@ -24,5 +36,3 @@
 // form
 @import "./form/form-consultation.scss";
 @import "./form/form-calculator.scss";
-
-
