@@ -1,12 +1,17 @@
 .calculator {
   height: 100vh;
 }
+
 .calculator.hidden {
   visibility: hidden;
   position: relative;
 }
 
 .calculator__inner {
+  max-width: 100%;
+  width: calc(100% - 150px);
+  padding: 0 2rem;
+  margin: 0 auto;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -39,11 +44,11 @@
     &:before {
       content: '';
       position: absolute;
-      left: 23%;
+      left: 13%;
       top: 25%;
       width: 30px;
       height: 30px;
-      background: url(../../img/excel.svg);
+      background: url(../img/excel.svg);
       background-repeat: no-repeat;
       background-size: cover;
     }

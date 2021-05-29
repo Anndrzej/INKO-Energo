@@ -1,35 +1,43 @@
 .section {
-    height: 100vh;
-    position: relative;
+  height: 100vh;
+  position: relative;
 
-    &--answers.hidden {
-        visibility: hidden;
-    }
+  &--answers.hidden {
+    visibility: hidden;
+  }
 }
+
 .section__inner {
-    height: 100%;
-    padding: 100px 0 135px 0;
+  height: 100%;
+  padding: 100px 120px 135px 120px;
 
-    text-align: center;
+  text-align: center;
 
-    &--partners {
-        padding: 120px 0 0 0;
-    }
+  &--work {
+    padding: 100px 0;
+  }
+
+  &--partners {
+    padding: 120px 0 0 0;
+  }
 }
 
 .section__title {
-    h2 {
-        font-size: 48px;
-        line-height: 75px;
+  h2 {
+    font-size: 48px;
+    line-height: 75px;
 
-        margin-bottom: 5px;
-    }
+    margin-bottom: 5px;
+  }
 }
-.section__text {
-    p {
-        font-size: 24px;
-        line-height: 30px;
 
-        margin-bottom: 15px;
-    }
+.section__text {
+  padding: 0 6rem;
+
+  p {
+    font-size: 24px;
+    line-height: 30px;
+
+    margin-bottom: 15px;
+  }
 }
