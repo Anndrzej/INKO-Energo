@@ -17,6 +17,9 @@
 .modal.show {
   opacity: 1;
   visibility: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal__inner {
@@ -44,8 +47,9 @@
 }
 
 .close {
+  cursor: pointer;
   position: absolute;
-  top: 115px;
+  top: 0;
   right: 115px;
 
   svg {
