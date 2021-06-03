@@ -20,6 +20,10 @@
   right: 0;
 
   box-shadow: 0px 0px 20px rgba(11, 47, 63, 0.15);
+
+  @include for-large-desktop-laptops {
+    width: 40%;
+  }
 }
 
 .location__content {
