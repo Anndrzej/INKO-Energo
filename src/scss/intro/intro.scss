@@ -30,6 +30,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 75px 0 75px;
+
+    @include for-tablet-landscape-medium-desktops {
+      height: 60px;
+      padding: 0 60px 0 60px;
+    }
+
   }
 
   &-right {
@@ -37,6 +43,12 @@
     right: 0;
     width: 75px;
     height: calc(100% - 150px);
+
+    @include for-tablet-landscape-medium-desktops {
+      top: 60px;
+      width: 60px;
+      height: calc(100% - 120px);
+    }
   }
 
   &-left {
@@ -44,6 +56,12 @@
     left: 0;
     width: 75px;
     height: calc(100% - 150px);
+
+    @include for-tablet-landscape-medium-desktops {
+      top: 60px;
+      width: 60px;
+      height: calc(100% - 120px);
+    }
   }
 
   &-bottom {
@@ -53,6 +71,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include for-tablet-landscape-medium-desktops {
+      height: 60px;
+    }
   }
 }
 
@@ -106,7 +128,6 @@
 
   h1 {
     font-size: calc(27px + (42 - 6) * ((100vw - 700px) / (1600 - 3)));
-
     margin-bottom: 50px;
 
     span {
@@ -123,5 +144,10 @@
     line-height: 35px;
 
     margin-bottom: 65px;
+
+    @include for-tablet-landscape-medium-desktops {
+      font-size: 18px;
+      line-height: 30px;
+    }
   }
 }

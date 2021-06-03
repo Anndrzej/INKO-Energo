@@ -22,6 +22,15 @@
   bottom: 20%;
   left: 15%;
   color: $white;
+
+  @include for-large-desktop-laptops {
+    left: 8%;
+    right: 18%;
+
+    &:nth-of-type(1) {
+      left: 20%;
+    }
+  }
 }
 
 .info__title {
@@ -30,16 +39,11 @@
 
   margin-bottom: 10px;
   transition: color .2s linear;
-
-
 }
 
 .info__text {
   font-size: 16px;
   line-height: 22px;
-
-
-
 }
 
 .info__btn {
