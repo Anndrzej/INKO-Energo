@@ -16,7 +16,8 @@
 
 
 .border {
-  display: flex;
+  // display: flex;
+  display: none;
   position: fixed;
   background: rgba(30, 33, 40, 0.9);
   z-index: 9999;

@@ -1,30 +1,39 @@
 .achivements {
   height: 100vh;
 }
+.achivements__inner {
+  height: 100%;
+}
 
 
 /* моя правка */
-.achivements__options__wrapper {
-  height: 35vh;
+.achivements__wrapper {
+  height: 33.3333%;
   display: flex;
+  flex-wrap: wrap;
 }
 
-.achivements__options__container {
+.achivements__container {
   border: 1px solid $border-color;
   width: 33.33333%;
+  display: flex;
+  align-items: center;
 
-  &:nth-child(1) {
-    margin-left: 75px;
+  &:nth-child(1){
+    padding: 0 25px 0 75px;
   }
-  &:nth-child(3) {
-    margin-right: 75px;
+  &:nth-child(2){
+    padding: 0 25px 0 25px;
+  }
+  &:nth-child(3){
+    padding: 0 75px 0 25px;
   }
 }
 
 .achivements__options {
-  margin: 100px 0 0 0;
   display: flex;
-  // padding: 50px;
+  align-items: flex-start;
+  margin: auto;
 
   img {
     width: 3rem;
@@ -33,11 +42,10 @@
   }
 }
 
-.achivements__options__info {
+.achivements__content {
   display: flex;
   flex-direction: column;
   text-align: left;
-
 
   h5 {
     font-size: 2rem;
@@ -50,22 +58,27 @@
   }
 }
 
+
+
+
 // stats block
 .achivements__stats {
   display: flex;
   flex-wrap: wrap;
-  height: 65vh;
-
-  margin: 0 75px 0 75px;
+  height: 65%;
 }
 .achivements__block {
   width: 33.33333%;
   border: 1px solid $border-color;
+  display: flex;
+  padding: 50px;
 }
+
 .achivements__info {
-  padding: 70px 50px 95px 50px;
   display: flex;
   align-items: center;
+  margin: 0 auto;
+  
 
   span {
     color: $red;
