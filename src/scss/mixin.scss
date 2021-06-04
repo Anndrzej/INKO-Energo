@@ -11,15 +11,15 @@
 }
 
 @mixin for-portrait-tablet-small-desktops {
-    @media (min-width: 768px) and (max-width: 991px) { @content; }
+    @media (max-width: 991px) { @content; }
 }
 
 @mixin for-tablet-landscape-medium-desktops {
-    @media (min-width: 992px) and (max-width: 1199px) { @content; }
+    @media (max-width: 1199px) { @content; }
 }
 
 @mixin for-large-desktop-laptops {
-    @media (min-width: 1200px) and (max-width: 1440px) { @content; }
+    @media (max-width: 1440px) { @content; }
 }
 
 

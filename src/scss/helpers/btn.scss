@@ -14,9 +14,13 @@
   }
 
   &--big {
-    font-size: 24px;
+    font-size: calc(15px + (40 - 35) * ((100vw - 800px) / (1600 - 900)));
     line-height: 34px;
     text-decoration: none;
     padding: 20px 100px;
+
+    @include for-tablet-portrait-small-desktops {
+      padding: 10px 20px;
+    }
   }
 }
