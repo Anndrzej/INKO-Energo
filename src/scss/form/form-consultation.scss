@@ -5,7 +5,7 @@
 }
 
 .form__text {
-  font-size: 24px;
+  font-size: calc(15px + (40 - 35) * ((100vw - 800px) / (1600 - 900)));
   line-height: 30px;
   color: $white;
 
@@ -13,7 +13,7 @@
 }
 
 .form__description {
-  font-size: 18px;
+  font-size: calc(15px + (38 - 35) * ((100vw - 800px) / (1600 - 900)));
   line-height: 30px;
 
   margin-bottom: 30px;
@@ -28,7 +28,16 @@
 }
 
 .form__input__container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
   margin-bottom: 40px;
+  align-items: center;
+
+  @include for-tablet-portrait-small-desktops {
+    flex-direction: column;
+  }
 }
 
 .input__consultation {
@@ -46,6 +55,15 @@
   &:nth-child(1) {
     margin-right: 30px;
   }
+
+  @include for-tablet-portrait-small-desktops {
+    &:nth-child(1) {
+      margin-right: unset;
+      margin-bottom: 30px;
+    }
+
+  }
+
 }
 
 .textarea__consultation {

@@ -3,6 +3,9 @@
   flex-direction: row;
   justify-content: space-evenly;
 
+  @include for-tablet-portrait-small-desktops {
+    flex-direction: column;
+  }
 }
 
 .answers__col {
@@ -12,6 +15,12 @@
 
   &:nth-child(1) {
     margin-right: 40px;
+  }
+
+  @include for-tablet-portrait-small-desktops {
+    &:nth-child(1) {
+      margin-right: unset;
+    }
   }
 }
 

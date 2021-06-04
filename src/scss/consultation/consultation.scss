@@ -1,9 +1,3 @@
-.consultation {
-  overflow: hidden;
-
-
-}
-
 .consultation__img {
   height: 100vh;
   background: url(../img/consultation-bg.png);
@@ -29,7 +23,7 @@
 
 .consultation__title {
   color: $white;
-  font-size: 64px;
+  font-size: calc(48px + (51 - 35) * ((100vw - 1000px) / (1600 - 900)));
   line-height: 75px;
 
   margin-bottom: 45px;

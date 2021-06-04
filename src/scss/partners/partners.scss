@@ -21,4 +21,15 @@
       max-width: 100%;
     }
   }
+
+
+
+  @include for-tablet-landscape-medium-desktops {
+    width: 50%;
+    height: 250px;
+  }
+
+  @include for-tablet-portrait-small-desktops {
+    width: 100%;
+  }
 }
