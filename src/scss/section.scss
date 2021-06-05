@@ -25,7 +25,7 @@
 
   &--answers {
     margin: 5rem 0;
-    padding: 0 60px;
+    padding: 0 75px;
 
     @include for-portrait-phone {
       padding: 0 30px
@@ -34,8 +34,8 @@
 
   &--consultation {
     @include for-tablet-portrait-small-desktops {
-      padding: 0 50px;
-      margin: 50px 0;
+      padding: 50px 50px;
+      // margin: 50px 0;
     }
   }
 

@@ -16,8 +16,6 @@
 
 
 .border {
-  // display: flex;
-  display: none;
   position: fixed;
   background: rgba(30, 33, 40, 0.9);
   z-index: 9999;
@@ -27,7 +25,7 @@
     width: 100%;
     margin: 0 auto;
     height: 75px;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     padding: 0 75px 0 75px;
@@ -50,6 +48,10 @@
       width: 60px;
       height: calc(100% - 120px);
     }
+
+    @include for-tablet-portrait-small-desktops {
+      display: none;
+    }
   }
 
   &-left {
@@ -63,6 +65,17 @@
       width: 60px;
       height: calc(100% - 120px);
     }
+
+    @include for-tablet-portrait-small-desktops {
+      top: 0;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
   }
 
   &-bottom {
@@ -79,6 +92,24 @@
   }
 }
 
+.border__contacts {
+  display: none;
+
+  @include for-tablet-portrait-small-desktops {
+    display: block;
+    margin-left: 1rem;
+
+    a {
+      padding-right: 1rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+}
+
 .logo {
   color: $white;
   text-transform: uppercase;
@@ -86,7 +117,6 @@
   align-items: center;
   text-align: center;
 
-  margin: 0 0 0 10%;
 
   p {
     font-size: 40px;
@@ -136,7 +166,12 @@
       line-height: 114px;
       font-size: calc(47px + (42 - 6) * ((100vw - 700px) / (1600 - 3)));
       text-transform: uppercase;
+
+      @include for-tablet-portrait-small-desktops {
+        line-height: 64px;
+      }
     }
+
 
   }
 
@@ -150,5 +185,9 @@
       font-size: 18px;
       line-height: 30px;
     }
+  }
+
+  @include for-tablet-portrait-small-desktops {
+    padding: 0 2rem;
   }
 }

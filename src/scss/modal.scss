@@ -1,17 +1,14 @@
 .modal {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 999;
-
-  position: absolute;
-
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
 
   opacity: 0;
   visibility: hidden;
+
+  @include for-portrait-phone {
+    height: auto;
+  }
 }
 
 .modal.show {
@@ -23,7 +20,6 @@
 }
 
 .modal__inner {
-  padding: 75px;
   position: relative;
 }
 
@@ -32,6 +28,8 @@
   line-height: 75px;
 
   margin-bottom: 45px;
+
+
 }
 
 .modal__description {
@@ -50,7 +48,7 @@
   cursor: pointer;
   position: absolute;
   top: 0;
-  right: 115px;
+  right: 10%;
 
   svg {
     fill: $red;

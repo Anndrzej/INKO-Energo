@@ -29,7 +29,7 @@
     height: 250px;
   }
 
-  @include for-tablet-portrait-small-desktops {
+  @include for-portrait-phone {
     width: 100%;
   }
 }

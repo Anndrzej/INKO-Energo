@@ -94,6 +94,10 @@ video {
   outline: 0;
 }
 
+.btn:focus {
+  outline: none;
+}
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -306,6 +310,7 @@ textarea {
 button,
 input {
   line-height: normal;
+  outline: none;
 }
 
 /**
