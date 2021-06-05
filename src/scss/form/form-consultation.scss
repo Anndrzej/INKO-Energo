@@ -6,7 +6,6 @@
 
 .form__text {
   font-size: calc(15px + (40 - 35) * ((100vw - 800px) / (1600 - 900)));
-  line-height: 30px;
   color: $white;
 
   margin-bottom: 50px;
@@ -14,7 +13,6 @@
 
 .form__description {
   font-size: calc(15px + (38 - 35) * ((100vw - 800px) / (1600 - 900)));
-  line-height: 30px;
 
   margin-bottom: 30px;
 

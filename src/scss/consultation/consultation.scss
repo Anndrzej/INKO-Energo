@@ -1,5 +1,13 @@
-.consultation__img {
+.consultation {
   height: 100vh;
+
+  @include for-portrait-phone {
+    height: auto;
+  }
+}
+
+.consultation__img {
+  height: 100%;
   background: url(../img/consultation-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -7,9 +15,8 @@
 }
 
 .consultation__shadow {
-  position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: rgba(18, 20, 27, 0.8);
 
   p {
@@ -24,7 +31,6 @@
 .consultation__title {
   color: $white;
   font-size: calc(48px + (51 - 35) * ((100vw - 1000px) / (1600 - 900)));
-  line-height: 75px;
 
   margin-bottom: 45px;
 }

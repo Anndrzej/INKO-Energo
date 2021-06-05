@@ -16,6 +16,13 @@
     background-color: #6b090d;
   }
 
+  @include for-tablet-portrait-small-desktops {
+    width: 75px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transform: translateY(0);
+  }
 }
 
 .burger__line {
