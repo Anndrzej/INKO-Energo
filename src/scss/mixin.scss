@@ -16,6 +16,7 @@
 
 @mixin for-tablet-landscape-medium-desktops {
     @media (max-width: 1199px) { @content; }
+    // border only top
 }
 
 @mixin for-large-desktop-laptops {
