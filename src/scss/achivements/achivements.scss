@@ -1,13 +1,13 @@
 .achivements {
-  height: 100%;
-}
-.achivements__inner {
-  height: 100%;
-}
+  height: 100vh;
 
+  @include for-portrait-tablet-small-desktops {
+    height: 100%;
+  }
+}
 
 /* моя правка */
-.achivements__wrapper {
+.achivements__types {
   display: flex;
   flex-wrap: wrap;
 }
@@ -19,13 +19,37 @@
   align-items: center;
 
   &:nth-child(1){
-    padding: 50px 25px 30px 75px;
+    padding: 150px 0px 0px 100px;
   }
   &:nth-child(2){
-    padding: 50px 25px 30px 25px;
+    padding: 150px 0 0 0;
   }
   &:nth-child(3){
-    padding: 50px 75px 30px 25px;
+    padding: 150px 100px 0px 0px;
+  }
+
+  @include for-large-desktop-laptops {
+    &:nth-child(1){
+      padding: 75px 0px 0px 50px;
+    }
+    &:nth-child(2){
+      padding: 75px 0 0 0;
+    }
+    &:nth-child(3){
+      padding: 75px 50px 0px 0px;
+    }
+  }
+
+  @include for-portrait-tablet-small-desktops {
+    &:nth-child(1){
+      padding: 30px 50px;
+    }
+    &:nth-child(2){
+      padding: 30px 50px;
+    }
+    &:nth-child(3){
+      padding: 30px 50px;
+    }
   }
 
   @include for-tablet-portrait-small-desktops {
@@ -40,17 +64,26 @@
     }
   }
 
-  @include for-portrait-phone {
+  @include for-tablet-portrait-small-desktops {
+
+    &:nth-child(1){
+      padding: 25px;
+    }
+    &:nth-child(2){
+      padding: 25px;
+    }
+    &:nth-child(3){
+      padding: 25px;
+    }
     width: 100%;
   }
-
-
 
 }
 
 .achivements__options {
   display: flex;
   align-items: flex-start;
+  margin: 40px 30px;
   
 
   img {
@@ -58,11 +91,20 @@
     height: 3rem;
     margin: 0 30px 50px 0;
   }
+
+  @include for-large-desktop-laptops {
+    margin: 0 0 0 0;
+  }
+  
   @include for-portrait-tablet-small-desktops {
     flex-direction: column;
     align-items: center;
 
     img { margin: 0 0 25px 0;}
+  }
+
+  @include for-tablet-portrait-small-desktops {
+    width: 100%;
   }
 
 }
@@ -94,27 +136,86 @@
 .achivements__stats {
   display: flex;
   flex-wrap: wrap;
+  height: 65%;
 }
 .achivements__block {
   width: 33.33333%;
   border: 1px solid $border-color;
   display: flex;
-  padding: 50px;
 
+  &:nth-child(1){
+    padding-left: 70px;
+  }
+  &:nth-child(2){
+    padding: 0 35px;
+  }
+  &:nth-child(3){
+    padding-right: 70px;
+  }
+  &:nth-child(4){
+    padding-left: 70px;
+  }
+  &:nth-child(5){
+    padding: 0 35px;
+  }
+  &:nth-child(6){
+    padding-right: 70px;
+  }
+  
   @include for-tablet-portrait-small-desktops {
     width: 50%;
+
+    &:nth-child(1){
+      padding: 0 0 0 0;
+    }
+    &:nth-child(2){
+      padding: 0 0 0 0;
+    }
+    &:nth-child(3){
+      padding: 0 0 0 0;
+    }
+    &:nth-child(4){
+      padding: 0 0 0 0;
+    }
+    &:nth-child(5){
+      padding: 0 0 0 0;
+    }
+    &:nth-child(6){
+      padding: 0 0 0 0;
+    }
   }
 
   @include for-small-phone {
     width: 100%;
+
+    &:nth-child(1){
+      padding: 0 0 0 0;
+    }
+    &:nth-child(2){
+      padding: 0 0 0 0;
+    }
+    &:nth-child(3){
+      padding: 0 0 0 0;
+    }
+    &:nth-child(4){
+      padding: 0 0 0 0;
+    }
+    &:nth-child(5){
+      padding: 0 0 0 0;
+    }
+    &:nth-child(6){
+      padding: 0 0 0 0;
+    }
   }
+  }
+
 }
 
 .achivements__info {
   display: flex;
   align-items: center;
-  margin: 0 auto;
-  
+  padding: 100px 50px 100px 50px;
+
 
   span {
     color: $red;
@@ -123,9 +224,10 @@
 
     margin-right: 30px;
 
-    @include for-portrait-tablet-small-desktops {
+    @include for-large-desktop-laptops {
       margin: 0 0 25px 0;
     }
+
     @include for-portrait-phone {
       font-size: 45px;
     }
@@ -143,8 +245,16 @@
     }
   }
 
+  @include for-large-desktop-laptops {
+    flex-direction: column;
+    text-align: center;
+}
   @include for-portrait-tablet-small-desktops {
     flex-direction: column;
     align-items: center;
+  }
+
+  @include for-tablet-portrait-small-desktops {
+    padding: 50px;
   }
 }

@@ -1,5 +1,5 @@
 .services {
-  height: 100vh;
+  height: 100%;
 }
 
 .services__inner {
@@ -16,7 +16,7 @@
 
 .services__block {
   display: flex;
-  height: 50%;
+  // height: 50%;
   width: 33.33333%;
   cursor: pointer;
   background: rgba(0, 0, 0, 0.5);
