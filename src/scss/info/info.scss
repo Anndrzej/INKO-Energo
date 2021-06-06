@@ -1,5 +1,5 @@
 .info {
-  height: 100vh;
+  height: 100%;
 }
 
 .info__inner {
@@ -13,6 +13,11 @@
     .info__title {
       color: $red
     }
+  }
+
+  @include for-portrait-tablet-small-desktops {
+    width: 50%;
+    height: 50%;
   }
 }
 
