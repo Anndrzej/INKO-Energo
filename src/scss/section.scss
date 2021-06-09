@@ -27,8 +27,12 @@
     margin: 5rem 0;
     padding: 0 75px;
 
-    @include for-portrait-phone {
+    @include for-tablet-portrait-small-desktops {
       padding: 0 30px
+    }
+
+    @include for-portrait-phone {
+      padding: 0 15px
     }
   }
 
@@ -57,9 +61,7 @@
     font-size: calc(12px + (46 - 29) * ((100vw - 100px) / (1600 - 3)));
     line-height: 30px;
 
-    margin-bottom: 15px;
-
-
+    margin-bottom: 50px;
   }
 
   @include for-tablet-portrait-small-desktops {
