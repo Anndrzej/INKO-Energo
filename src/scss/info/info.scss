@@ -17,7 +17,7 @@
 
   @include for-portrait-tablet-small-desktops {
     width: 50%;
-    height: 50%;
+    // height: 50%;
   }
 }
 
@@ -49,6 +49,11 @@
 .info__text {
   font-size: 16px;
   line-height: 22px;
+
+  @include for-portrait-tablet-small-desktops {
+    display: none;
+  }
+
 }
 
 .info__btn {
