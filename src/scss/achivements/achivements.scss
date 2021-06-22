@@ -192,46 +192,48 @@
     padding: 30px;
 
     &:nth-child(1){
-      padding: 30px;
+      padding: 30px 0;
     }
     &:nth-child(2){
-      padding: 30px;
+      padding: 30px 0;
     }
     &:nth-child(3){
-      padding: 30px;
+      padding: 30px 0;
     }
     &:nth-child(4){
-      padding: 30px;
+      padding: 30px 0;
     }
     &:nth-child(5){
-      padding: 30px;
+      padding: 30px 0;
     }
     &:nth-child(6){
-      padding: 30px;
+      padding: 30px 0;
     }
   }
 
   @include for-portrait-phone {
     width: 100%;
+    display: flex;
+    justify-content: center;
 
-    &:nth-child(1){
-      padding: 25px 85px;
-    }
-    &:nth-child(2){
-      padding: 25px 63px;
-    }
-    &:nth-child(3){
-      padding: 25px 59px;
-    }
-    &:nth-child(4){
-      padding: 25px 97px;
-    }
-    &:nth-child(5){
-      padding: 25px 106px;
-    }
-    &:nth-child(6){
-      padding: 25px 85px;
-    }
+    // &:nth-child(1){
+    //   padding: 25px 85px;
+    // }
+    // &:nth-child(2){
+    //   padding: 25px 63px;
+    // }
+    // &:nth-child(3){
+    //   padding: 25px 59px;
+    // }
+    // &:nth-child(4){
+    //   padding: 25px 97px;
+    // }
+    // &:nth-child(5){
+    //   padding: 25px 106px;
+    // }
+    // &:nth-child(6){
+    //   padding: 25px 85px;
+    // }
   }
 
 }
@@ -292,6 +294,9 @@
   }
 
   @include for-tablet-portrait-small-desktops {
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
   }
 }

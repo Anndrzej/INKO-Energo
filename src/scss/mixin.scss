@@ -6,6 +6,10 @@
     @media (max-width: 480px) { @content; }
 }
 
+@mixin for-one-block {
+    @media (max-width: 595px) { @content; }
+}
+
 @mixin for-tablet-portrait-small-desktops {
     @media (max-width: 767px) { @content; }
 }
@@ -26,9 +30,10 @@
 
 /*
 
-@include for-portrait-phone {
+  @include for-one-block {
 
-}
+  }
+
 
 */
 

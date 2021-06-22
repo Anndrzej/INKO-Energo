@@ -6,6 +6,9 @@
 .location__wrp {
   display: flex;
 
+  @include for-portrait-phone {
+    flex-direction: column;
+  }
 }
 
 .location__container {
@@ -22,6 +25,7 @@
 
   @include for-portrait-phone {
     height: auto;
+    width: 100%;
   }
 }
 
