@@ -45,6 +45,12 @@
     p {
       bottom: 25%;
     }
+
+    @include for-portrait-tablet-small-desktops {
+      p {
+        bottom: 10%;
+      }
+    }
   }
 
   &:nth-of-type(4) {
@@ -87,6 +93,15 @@
     }
   }
 
+  @include for-portrait-tablet-small-desktops {
+    &:nth-child(n){
+      p{
+        left: 10%;
+      }
+    }
+  }
+
+
   @include for-tablet-portrait-small-desktops {
     width: 100%;
   }
@@ -115,6 +130,12 @@
     @include for-portrait-tablet-small-desktops {
       right: -25%;
     }
+
+    @include for-portrait-phone {
+      display: none;
+    }
+
+
   }
 
   span {
