@@ -16,7 +16,6 @@
 
 
 .border {
-  display: none;
   position: fixed;
   background: rgba(30, 33, 40, 0.9);
   z-index: 9999;
@@ -25,8 +24,8 @@
     top: 0;
     width: 100%;
     margin: 0 auto;
-    height: 75px;
     display: none;
+    height: 75px;
     justify-content: space-between;
     align-items: center;
     padding: 0 75px 0 75px;
@@ -76,6 +75,17 @@
       align-items: center;
     }
 
+    // @include for-portrait-phone {
+    //   background: unset;
+    //   width: auto;
+    //   bottom: 15%;
+    //   top: unset;
+    //   right: 10%;
+
+    //   a {
+    //     display: none;
+    //   }
+    // }
 
   }
 
@@ -93,8 +103,34 @@
   }
 }
 
+.burger__contacts {
+  display: none;
+  background: unset;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red;
+
+  @include for-portrait-phone {
+    display: block;
+    position: fixed;
+    bottom: 15%;
+    right: 8%;
+    animation: burger__contacts 2s infinite;
+    border-radius: 50%;
+  }
+
+  .btn__contacts {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .border__contacts {
   display: none;
+  z-index: -1;
 
   @include for-tablet-portrait-small-desktops {
     display: block;
@@ -109,7 +145,46 @@
     }
   }
 
+  @include for-portrait-phone {
+    position: fixed;
+    bottom: 22%;
+    right: 23%;
+    margin: auto;
+
+    a {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: .2s linear;
+
+      &:nth-child(2) {
+        transform: translate(0, 0)
+      }
+
+      &:nth-child(1) {
+        transform: translate(0, 0)
+      }
+
+
+    }
+
+  }
+
+
+
 }
+
+
+.active__contacts {
+  &:nth-child(2) {
+    transform: translate(0, -170%) !important
+  }
+
+  &:nth-child(1) {
+    transform: translate(0, -320%) !important
+  }
+}
+
 
 .logo {
   color: $white;
@@ -190,5 +265,19 @@
 
   @include for-tablet-portrait-small-desktops {
     padding: 0 2rem;
+  }
+}
+
+@keyframes burger__contacts {
+  0% {
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 60px rgba(204, 169, 44, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
   }
 }
