@@ -78,6 +78,9 @@
       background: url(../img/excel.svg);
       background-repeat: no-repeat;
       background-size: cover;
+      @include for-portrait-phone {
+      display: none;
+    }
     }
 
     @include for-portrait-tablet-small-desktops {
