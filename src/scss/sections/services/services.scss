@@ -1,0 +1,140 @@
+.services {
+  height: 100%;
+}
+
+.services__inner {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.services__block {
+  display: flex;
+  // height: 50%;
+  width: 33.33333%;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  transition: .5s linear;
+
+
+  img {
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  &:hover {
+    background: rgba(0, 0, 0, 0);
+
+  }
+
+  &:nth-of-type(1) {
+    p {
+      left: 30%;
+    }
+  }
+
+  &:nth-of-type(n+4) {
+    p {
+      bottom: 25%;
+    }
+
+    @include for-portrait-tablet-small-desktops {
+      p {
+        bottom: 10%;
+      }
+    }
+  }
+
+  &:nth-of-type(4) {
+    p {
+      left: 30%;
+    }
+  }
+
+  @include for-tablet-landscape-medium-desktops {
+    // height: 33.33333%;
+    width: 50%;
+
+    &:nth-child(1) {
+      p {
+        left: 20%;
+      }
+    }
+
+    &:nth-child(2) {
+      p {
+        left: 10%;
+      }
+    }
+
+    &:nth-child(3) {
+      p {
+        left: 20%;
+      }
+    }
+
+    &:nth-child(4) {
+      p {
+        left: 10%;
+      }
+    }
+
+    &:nth-child(5) {
+      p {
+        left: 20%;
+      }
+    }
+  }
+
+  @include for-portrait-tablet-small-desktops {
+    &:nth-child(n) {
+      p {
+        left: 10%;
+      }
+    }
+  }
+
+
+  @include for-tablet-portrait-small-desktops {
+    width: 100%;
+  }
+
+
+}
+
+.services__text {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: $white;
+  font-size: 2rem;
+
+  &:after {
+    content: '';
+    background: url(../../img/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 43%;
+    right: -28%;
+    width: 30px;
+    height: 12px;
+
+    @include for-portrait-tablet-small-desktops {
+      right: -25%;
+    }
+
+    @include for-portrait-phone {
+      display: none;
+    }
+
+
+  }
+
+  span {
+    display: block;
+  }
+}

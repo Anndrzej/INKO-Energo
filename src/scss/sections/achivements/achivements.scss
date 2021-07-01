@@ -1,0 +1,311 @@
+.achivements {
+  height: 100vh;
+
+  @include for-portrait-tablet-small-desktops {
+    height: 100%;
+  }
+}
+
+/* моя правка */
+.achivements__types {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.achivements__container {
+  border: 1px solid $border-color;
+  width: 33.33333%;
+  display: flex;
+  align-items: center;
+
+  &:nth-child(1) {
+    padding: 150px 0px 0px 100px;
+  }
+
+  &:nth-child(2) {
+    padding: 150px 0 0 0;
+  }
+
+  &:nth-child(3) {
+    padding: 150px 100px 0px 0px;
+  }
+
+  @include for-large-desktop-laptops {
+    &:nth-child(1) {
+      padding: 75px 20px 20px 75px;
+    }
+
+    &:nth-child(2) {
+      padding: 75px 20px 0px 20px;
+    }
+
+    &:nth-child(3) {
+      padding: 75px 50px 0px 20px;
+    }
+  }
+
+  @include for-portrait-tablet-small-desktops {
+    &:nth-child(1) {
+      padding: 30px 50px;
+    }
+
+    &:nth-child(2) {
+      padding: 30px 50px;
+    }
+
+    &:nth-child(3) {
+      padding: 30px 50px;
+    }
+  }
+
+  @include for-tablet-portrait-small-desktops {
+    &:nth-child(1) {
+      padding: 50px 25px 30px 25px;
+    }
+
+    &:nth-child(2) {
+      padding: 50px 25px 30px 25px;
+    }
+
+    &:nth-child(3) {
+      padding: 50px 75px 30px 25px;
+    }
+  }
+
+  @include for-tablet-portrait-small-desktops {
+
+    &:nth-child(1) {
+      padding: 25px;
+    }
+
+    &:nth-child(2) {
+      padding: 25px;
+    }
+
+    &:nth-child(3) {
+      padding: 25px;
+    }
+
+    width: 100%;
+  }
+
+}
+
+.achivements__options {
+  display: flex;
+  align-items: flex-start;
+  margin: 40px 30px;
+
+
+  img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 30px 50px 0;
+  }
+
+  @include for-large-desktop-laptops {
+    margin: 0 0 0 0;
+  }
+
+  @include for-portrait-tablet-small-desktops {
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      margin: 0 0 25px 0;
+    }
+  }
+
+  @include for-tablet-portrait-small-desktops {
+    width: 100%;
+  }
+
+}
+
+.achivements__content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  h5 {
+    font-size: 2rem;
+  }
+
+  p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  @include for-portrait-tablet-small-desktops {
+    text-align: center;
+  }
+}
+
+// stats block
+.achivements__stats {
+  display: flex;
+  flex-wrap: wrap;
+  height: 65%;
+}
+
+.achivements__block {
+  width: 33.33333%;
+  border: 1px solid $border-color;
+  display: flex;
+
+  &:nth-child(1) {
+    padding-left: 70px;
+  }
+
+  &:nth-child(2) {
+    padding: 0 35px;
+  }
+
+  &:nth-child(3) {
+    padding-right: 70px;
+  }
+
+  &:nth-child(4) {
+    padding-left: 70px;
+  }
+
+  &:nth-child(5) {
+    padding: 0 35px;
+  }
+
+  &:nth-child(6) {
+    padding-right: 70px;
+  }
+
+  @include for-tablet-landscape-medium-desktops {
+    &:nth-child(1) {
+      padding-left: 0px;
+    }
+
+    &:nth-child(2) {
+      padding: 0 35px;
+    }
+
+    &:nth-child(3) {
+      padding-right: 0px;
+    }
+
+    &:nth-child(4) {
+      padding-left: 0px;
+    }
+
+    &:nth-child(5) {
+      padding: 0 35px;
+    }
+
+    &:nth-child(6) {
+      padding-right: 0px;
+    }
+  }
+
+  @include for-portrait-tablet-small-desktops {
+    width: 50%;
+  }
+
+  @include for-tablet-portrait-small-desktops {
+    width: 50%;
+    padding: 30px;
+
+    &:nth-child(1) {
+      padding: 30px 0;
+    }
+
+    &:nth-child(2) {
+      padding: 30px 0;
+    }
+
+    &:nth-child(3) {
+      padding: 30px 0;
+    }
+
+    &:nth-child(4) {
+      padding: 30px 0;
+    }
+
+    &:nth-child(5) {
+      padding: 30px 0;
+    }
+
+    &:nth-child(6) {
+      padding: 30px 0;
+    }
+  }
+
+  @include for-portrait-phone {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+}
+
+.achivements__info {
+  display: flex;
+  align-items: center;
+  padding: 100px 50px 100px 50px;
+
+
+  span {
+    color: $red;
+    font-size: 64px;
+    line-height: 40px;
+
+    margin-right: 30px;
+
+    @include for-large-desktop-laptops {
+      margin: 0 0 25px 0;
+    }
+
+    @include for-tablet-portrait-small-desktops {
+      font-size: 50px;
+    }
+
+    @include for-portrait-phone {
+      font-size: 45px;
+    }
+  }
+
+  p {
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.02em;
+
+    @include for-portrait-tablet-small-desktops {
+      text-align: center;
+    }
+
+    @include for-tablet-portrait-small-desktops {
+      font-size: 25px;
+      line-height: 32px;
+    }
+
+    @include for-portrait-phone {
+      font-size: 21px;
+      line-height: 31px
+    }
+  }
+
+  @include for-large-desktop-laptops {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @include for-portrait-tablet-small-desktops {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include for-tablet-portrait-small-desktops {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+}

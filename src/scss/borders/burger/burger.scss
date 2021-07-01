@@ -1,0 +1,73 @@
+.burger {
+  cursor: pointer;
+  background: $red;
+  width: 100%;
+  height: 75px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: .2s linear;
+
+  &:hover {
+    background-color: #6b090d;
+  }
+
+  @include for-tablet-portrait-small-desktops {
+    width: 75px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transform: translateY(0);
+  }
+
+}
+
+.burger__line {
+  width: 35px;
+  height: 3px;
+  margin: 5px 0 5px 0;
+  background: $white;
+  transition: .2s linear;
+
+}
+
+.burger__active {
+
+  .burger__line {
+    margin: 0;
+
+    &:nth-child(1) {
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      display: none;
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+
+    }
+  }
+
+}
+
+
+
+// @keyframes burger {
+//   0% {
+//     box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+//   }
+
+//   70% {
+//     box-shadow: 0 0 0 60px rgba(204, 169, 44, 0);
+//   }
+
+//   100% {
+//     box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+//   }
+// }
