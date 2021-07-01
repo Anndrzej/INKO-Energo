@@ -1,30 +1,13 @@
-.intro__img-wrapper {
-  width: 100%;
-  height: 100vh;
-
-  background: url(../img/intro.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.intro__shadow {
-  width: 100%;
-  height: 100%;
-  background: rgba(18, 20, 27, 0.8);
-}
-
-
 .border {
   position: fixed;
   background: rgba(30, 33, 40, 0.9);
   z-index: 9999;
 
   &-top {
+    display: flex;
     top: 0;
     width: 100%;
     margin: 0 auto;
-    display: none;
     height: 75px;
     justify-content: space-between;
     align-items: center;
@@ -35,6 +18,9 @@
       padding: 0 60px 0 60px;
     }
 
+    @include for-tablet-portrait-small-desktops {
+      display: none;
+    }
   }
 
   &-right {
@@ -75,17 +61,7 @@
       align-items: center;
     }
 
-    // @include for-portrait-phone {
-    //   background: unset;
-    //   width: auto;
-    //   bottom: 15%;
-    //   top: unset;
-    //   right: 10%;
 
-    //   a {
-    //     display: none;
-    //   }
-    // }
 
   }
 
@@ -93,12 +69,18 @@
     bottom: 0;
     width: 100%;
     height: 75px;
-    display: none;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #444956;
 
     @include for-tablet-landscape-medium-desktops {
       height: 60px;
+    }
+
+    @include for-tablet-portrait-small-desktops {
+      display: none;
     }
   }
 }
@@ -147,8 +129,8 @@
 
   @include for-portrait-phone {
     position: fixed;
-    bottom: 22%;
-    right: 23%;
+    bottom: 23%;
+    right: 22%;
     margin: auto;
 
     a {
@@ -164,14 +146,9 @@
       &:nth-child(1) {
         transform: translate(0, 0)
       }
-
-
     }
 
   }
-
-
-
 }
 
 
@@ -217,56 +194,14 @@
     color: $white;
     text-decoration: none;
     font-size: 22px;
+
+    @include for-portrait-tablet-small-desktops {
+      margin-right: 10px;
+      font-size: 15px;
+    }
   }
 }
 
-
-// intro content
-.intro__wrapper {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  color: $white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 6rem;
-
-  h1 {
-    font-size: calc(27px + (42 - 6) * ((100vw - 700px) / (1600 - 3)));
-    margin-bottom: 50px;
-
-    span {
-      display: block;
-      line-height: 114px;
-      font-size: calc(47px + (42 - 6) * ((100vw - 700px) / (1600 - 3)));
-      text-transform: uppercase;
-
-      @include for-tablet-portrait-small-desktops {
-        line-height: 64px;
-      }
-    }
-
-
-  }
-
-  p {
-    font-size: 24px;
-    line-height: 35px;
-
-    margin-bottom: 65px;
-
-    @include for-tablet-landscape-medium-desktops {
-      font-size: 18px;
-      line-height: 30px;
-    }
-  }
-
-  @include for-tablet-portrait-small-desktops {
-    padding: 0 2rem;
-  }
-}
 
 @keyframes burger__contacts {
   0% {

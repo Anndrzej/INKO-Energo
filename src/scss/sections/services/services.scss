@@ -8,11 +8,6 @@
   flex-wrap: wrap;
 }
 
-// .services__container {
-//   @extend .achivements__container;
-// }
-
-
 
 .services__block {
   display: flex;
@@ -68,6 +63,7 @@
         left: 20%;
       }
     }
+
     &:nth-child(2) {
       p {
         left: 10%;
@@ -94,8 +90,8 @@
   }
 
   @include for-portrait-tablet-small-desktops {
-    &:nth-child(n){
-      p{
+    &:nth-child(n) {
+      p {
         left: 10%;
       }
     }

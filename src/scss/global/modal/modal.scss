@@ -1,0 +1,79 @@
+.modal {
+  width: 100%;
+  z-index: 999;
+
+  opacity: 0;
+  display: none;
+
+  @include for-portrait-phone {
+    height: auto;
+  }
+}
+
+.modal__inner {
+  position: relative;
+}
+
+.modal.show {
+  opacity: 1;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__title {
+  font-size: 64px;
+  line-height: 75px;
+
+  margin-bottom: 45px;
+
+  padding: 0 2rem;
+
+  @include for-portrait-tablet-small-desktops {
+    font-size: 2.8rem;
+    line-height: 2.5rem;
+
+  }
+
+  @include for-tablet-portrait-small-desktops {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+  }
+}
+
+.modal__description {
+  width: 100%;
+  font-size: 24px;
+  line-height: 30px;
+
+  margin-bottom: 50px;
+
+  span {
+    display: block;
+  }
+
+  @include for-portrait-tablet-small-desktops {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+
+  }
+
+  @include for-portrait-phone {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: -6%;
+  right: 11%;
+
+  svg {
+    fill: $red;
+    width: 26px;
+    height: 26px;
+  }
+}

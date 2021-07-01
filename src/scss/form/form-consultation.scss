@@ -29,8 +29,10 @@
   width: 100%;
   max-width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 40px;
+
   align-items: center;
 
   @include for-tablet-portrait-small-desktops {
@@ -54,9 +56,12 @@
     margin-right: 30px;
   }
 
-  @include for-tablet-portrait-small-desktops {
+  &:nth-child(2) {
+    margin-right: 30px;
+  }
+
+  @include for-tablet-landscape-medium-desktops {
     &:nth-child(1) {
-      margin-right: unset;
       margin-bottom: 30px;
     }
 

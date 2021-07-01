@@ -1,5 +1,4 @@
 .section {
-  // height: 100vh;
   position: relative;
 
   &--answers.hidden {
@@ -39,7 +38,6 @@
   &--consultation {
     @include for-tablet-portrait-small-desktops {
       padding: 50px 50px;
-      // margin: 50px 0;
     }
   }
 

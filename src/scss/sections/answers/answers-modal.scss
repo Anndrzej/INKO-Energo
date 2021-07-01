@@ -4,7 +4,7 @@
   max-width: 1290px;
 
   text-align: left;
-  padding: 30px 20px;
+  padding: 30px 100px;
 
   h3 {
     color: $black;
@@ -27,5 +27,9 @@
       font-size: 16px;
       line-height: 30px;
     }
+  }
+
+  @include for-one-block {
+    padding: 30px 20px;
   }
 }

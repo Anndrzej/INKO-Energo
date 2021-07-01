@@ -9,32 +9,38 @@
   font-weight: normal;
 }
 
-//mixin
-@import "./mixin.scss";
 
+// vars
 @import "./variables.scss";
-@import "./reset.scss";
-@import "./intro/intro.scss";
-@import "./helpers/btn.scss";
-@import "./intro/burger/burger.scss";
-@import "./intro/burger/menu.scss";
-@import "./scroll.scss";
-@import "./theme-switcher.scss";
-@import "./section.scss";
-@import "./answers.scss";
-@import "./answers-modal.scss";
-@import "./location.scss";
 
-@import "./modal.scss";
+// helpers
+@import "./helpers/mixin.scss";
+@import "./helpers/reset.scss";
 
-@import "./services/services.scss";
-@import "./achivements/achivements.scss";
-@import "./calculator/calculator.scss";
-@import "./calculator/calculator-modal.scss";
-@import "./info/info.scss";
-@import "./work/work.scss";
-@import "./partners/partners.scss";
-@import "./consultation/consultation.scss";
+// components
+@import "./borders/burger/burger.scss";
+@import "./borders/menu/menu.scss";
+@import "./borders/scroll.scss";
+@import "./borders/theme-switcher.scss";
+@import "./borders/borders.scss";
+
+@import "./global/modal/modal.scss";
+@import "./global/section/section.scss";
+@import "./global/btn/btn.scss";
+
+// sections
+@import "./sections/services/services.scss";
+@import "./sections/achivements/achivements.scss";
+@import "./sections/calculator/calculator.scss";
+@import "./sections/calculator/calculator-modal.scss";
+@import "./sections/info/info.scss";
+@import "./sections/work/work.scss";
+@import "./sections/partners/partners.scss";
+@import "./sections/consultation/consultation.scss";
+@import "./sections/answers/answers.scss";
+@import "./sections/answers/answers-modal.scss";
+@import "./sections/location/location.scss";
+@import "./sections/intro/intro.scss";
 
 // form
 @import "./form/form-consultation.scss";

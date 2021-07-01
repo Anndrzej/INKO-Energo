@@ -92,6 +92,7 @@
   border: 1px solid $border-color;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 12px 44px;
+  transform: rotateY(180deg);
 
   img {
     display: none;
@@ -103,7 +104,6 @@
 
   .work__description {
     display: block;
-    font-size: 18px;
-    line-height: 30px;
+    transform: rotateY(180deg);
   }
 }
